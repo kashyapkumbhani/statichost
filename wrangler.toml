@@ -1,0 +1,27 @@
+name = "statichost"
+
+# Build configuration
+[build]
+command = "npm run build"
+publish = "dist"
+
+# Environment variables
+[build.environment]
+NODE_VERSION = "18"
+
+[env.production]
+name = "statichost-prod"
+
+[env.staging]
+name = "statichost-staging"
+
+# Cloudflare account configuration
+account_id = "217f6f87437d3b5067efae8c720b84bc"
+zone_id = "4a714e5e166064e604d4d7a6d6a86db5"
+
+# Enable logging
+[observability.logs]
+enabled = true
+
+
+
